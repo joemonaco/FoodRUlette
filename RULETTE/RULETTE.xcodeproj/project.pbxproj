@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B01BA1D09059374F44F889 /* Pods_RULETTE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C768EEA70C09B32B3D4B35 /* Pods_RULETTE.framework */; };
+		D8A19E7621694FFE005C5329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A19E7521694FFE005C5329 /* AppDelegate.swift */; };
+		D8A19E7D21694FFE005C5329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A19E7C21694FFE005C5329 /* Assets.xcassets */; };
+		D8A19E8821695051005C5329 /* RestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A19E8721695051005C5329 /* RestListTableViewController.swift */; };
+		D8A19E8A21695067005C5329 /* RestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A19E8921695067005C5329 /* RestModel.swift */; };
+		D8A19E8C21695B47005C5329 /* RestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A19E8B21695B47005C5329 /* RestDetailViewController.swift */; };
+		D8BFD641216A1EDA00D6C15B /* CustomTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BFD640216A1EDA00D6C15B /* CustomTVCell.swift */; };
+		D8BFD643216A23FC00D6C15B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD642216A23FC00D6C15B /* Main.storyboard */; };
+		D8BFD645216A274400D6C15B /* PickCampusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BFD644216A274400D6C15B /* PickCampusViewController.swift */; };
+		D8BFD649216A39D400D6C15B /* foodRUletteCampuses.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD646216A39D400D6C15B /* foodRUletteCampuses.png */; };
+		D8BFD64A216A39D400D6C15B /* foodRUletteRandom.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD647216A39D400D6C15B /* foodRUletteRandom.png */; };
+		D8BFD64B216A39D400D6C15B /* foodRUletteRestaurants.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD648216A39D400D6C15B /* foodRUletteRestaurants.png */; };
+		D8BFD64E216A3C1600D6C15B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD64D216A3C1600D6C15B /* Launch Screen.storyboard */; };
+		D8BFD650216A3C2B00D6C15B /* foodRUletteLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD64F216A3C2B00D6C15B /* foodRUletteLogo.png */; };
+		D8BFD654216E432600D6C15B /* rutgersLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD653216E432600D6C15B /* rutgersLogo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C4339E893EA754094DD1040 /* Pods-RULETTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RULETTE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RULETTE/Pods-RULETTE.debug.xcconfig"; sourceTree = "<group>"; };
+		640AA2C519368C61DBE6F764 /* Pods-RULETTE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RULETTE.release.xcconfig"; path = "Pods/Target Support Files/Pods-RULETTE/Pods-RULETTE.release.xcconfig"; sourceTree = "<group>"; };
+		79C768EEA70C09B32B3D4B35 /* Pods_RULETTE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RULETTE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A19E7221694FFE005C5329 /* RULETTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RULETTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A19E7521694FFE005C5329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8A19E7C21694FFE005C5329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8A19E8121694FFE005C5329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A19E8721695051005C5329 /* RestListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestListTableViewController.swift; sourceTree = "<group>"; };
+		D8A19E8921695067005C5329 /* RestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestModel.swift; sourceTree = "<group>"; };
+		D8A19E8B21695B47005C5329 /* RestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDetailViewController.swift; sourceTree = "<group>"; };
+		D8BFD640216A1EDA00D6C15B /* CustomTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVCell.swift; sourceTree = "<group>"; };
+		D8BFD642216A23FC00D6C15B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D8BFD644216A274400D6C15B /* PickCampusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCampusViewController.swift; sourceTree = "<group>"; };
+		D8BFD646216A39D400D6C15B /* foodRUletteCampuses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodRUletteCampuses.png; sourceTree = "<group>"; };
+		D8BFD647216A39D400D6C15B /* foodRUletteRandom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodRUletteRandom.png; sourceTree = "<group>"; };
+		D8BFD648216A39D400D6C15B /* foodRUletteRestaurants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodRUletteRestaurants.png; sourceTree = "<group>"; };
+		D8BFD64D216A3C1600D6C15B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D8BFD64F216A3C2B00D6C15B /* foodRUletteLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodRUletteLogo.png; sourceTree = "<group>"; };
+		D8BFD653216E432600D6C15B /* rutgersLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rutgersLogo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8A19E6F21694FFE005C5329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B01BA1D09059374F44F889 /* Pods_RULETTE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		917028D3211D9C79964A0191 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C4339E893EA754094DD1040 /* Pods-RULETTE.debug.xcconfig */,
+				640AA2C519368C61DBE6F764 /* Pods-RULETTE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8A19E6921694FFE005C5329 = {
+			isa = PBXGroup;
+			children = (
+				D8A19E7421694FFE005C5329 /* RULETTE */,
+				D8A19E7321694FFE005C5329 /* Products */,
+				917028D3211D9C79964A0191 /* Pods */,
+				F3112DD381D77AC12C088DDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8A19E7321694FFE005C5329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8A19E7221694FFE005C5329 /* RULETTE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8A19E7421694FFE005C5329 /* RULETTE */ = {
+			isa = PBXGroup;
+			children = (
+				D8A19E7521694FFE005C5329 /* AppDelegate.swift */,
+				D8BFD640216A1EDA00D6C15B /* CustomTVCell.swift */,
+				D8A19E8721695051005C5329 /* RestListTableViewController.swift */,
+				D8BFD642216A23FC00D6C15B /* Main.storyboard */,
+				D8BFD64D216A3C1600D6C15B /* Launch Screen.storyboard */,
+				D8BFD644216A274400D6C15B /* PickCampusViewController.swift */,
+				D8A19E8B21695B47005C5329 /* RestDetailViewController.swift */,
+				D8A19E8921695067005C5329 /* RestModel.swift */,
+				D8BFD64C216A39DE00D6C15B /* TextImages */,
+				D8A19E7C21694FFE005C5329 /* Assets.xcassets */,
+				D8A19E8121694FFE005C5329 /* Info.plist */,
+			);
+			path = RULETTE;
+			sourceTree = "<group>";
+		};
+		D8BFD64C216A39DE00D6C15B /* TextImages */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFD653216E432600D6C15B /* rutgersLogo.png */,
+				D8BFD64F216A3C2B00D6C15B /* foodRUletteLogo.png */,
+				D8BFD647216A39D400D6C15B /* foodRUletteRandom.png */,
+				D8BFD648216A39D400D6C15B /* foodRUletteRestaurants.png */,
+				D8BFD646216A39D400D6C15B /* foodRUletteCampuses.png */,
+			);
+			path = TextImages;
+			sourceTree = "<group>";
+		};
+		F3112DD381D77AC12C088DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79C768EEA70C09B32B3D4B35 /* Pods_RULETTE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8A19E7121694FFE005C5329 /* RULETTE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A19E8421694FFE005C5329 /* Build configuration list for PBXNativeTarget "RULETTE" */;
+			buildPhases = (
+				235EC890174EB6231BB6C1F1 /* [CP] Check Pods Manifest.lock */,
+				D8A19E6E21694FFE005C5329 /* Sources */,
+				D8A19E6F21694FFE005C5329 /* Frameworks */,
+				D8A19E7021694FFE005C5329 /* Resources */,
+				29204B023263BE1EFD04E02A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RULETTE;
+			productName = RULETTE;
+			productReference = D8A19E7221694FFE005C5329 /* RULETTE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8A19E6A21694FFE005C5329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Joe Monaco";
+				TargetAttributes = {
+					D8A19E7121694FFE005C5329 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = D8A19E6D21694FFE005C5329 /* Build configuration list for PBXProject "RULETTE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8A19E6921694FFE005C5329;
+			productRefGroup = D8A19E7321694FFE005C5329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8A19E7121694FFE005C5329 /* RULETTE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8A19E7021694FFE005C5329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BFD649216A39D400D6C15B /* foodRUletteCampuses.png in Resources */,
+				D8BFD643216A23FC00D6C15B /* Main.storyboard in Resources */,
+				D8A19E7D21694FFE005C5329 /* Assets.xcassets in Resources */,
+				D8BFD650216A3C2B00D6C15B /* foodRUletteLogo.png in Resources */,
+				D8BFD64B216A39D400D6C15B /* foodRUletteRestaurants.png in Resources */,
+				D8BFD64A216A39D400D6C15B /* foodRUletteRandom.png in Resources */,
+				D8BFD64E216A3C1600D6C15B /* Launch Screen.storyboard in Resources */,
+				D8BFD654216E432600D6C15B /* rutgersLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		235EC890174EB6231BB6C1F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RULETTE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29204B023263BE1EFD04E02A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RULETTE/Pods-RULETTE-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RULETTE/Pods-RULETTE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8A19E6E21694FFE005C5329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BFD641216A1EDA00D6C15B /* CustomTVCell.swift in Sources */,
+				D8A19E8821695051005C5329 /* RestListTableViewController.swift in Sources */,
+				D8BFD645216A274400D6C15B /* PickCampusViewController.swift in Sources */,
+				D8A19E8C21695B47005C5329 /* RestDetailViewController.swift in Sources */,
+				D8A19E7621694FFE005C5329 /* AppDelegate.swift in Sources */,
+				D8A19E8A21695067005C5329 /* RestModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8A19E8221694FFE005C5329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8A19E8321694FFE005C5329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8A19E8521694FFE005C5329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4339E893EA754094DD1040 /* Pods-RULETTE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA95G6DJ93;
+				INFOPLIST_FILE = RULETTE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.123MonacoJoe.RULETTE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8A19E8621694FFE005C5329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 640AA2C519368C61DBE6F764 /* Pods-RULETTE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA95G6DJ93;
+				INFOPLIST_FILE = RULETTE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.123MonacoJoe.RULETTE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8A19E6D21694FFE005C5329 /* Build configuration list for PBXProject "RULETTE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A19E8221694FFE005C5329 /* Debug */,
+				D8A19E8321694FFE005C5329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8A19E8421694FFE005C5329 /* Build configuration list for PBXNativeTarget "RULETTE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A19E8521694FFE005C5329 /* Debug */,
+				D8A19E8621694FFE005C5329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8A19E6A21694FFE005C5329 /* Project object */;
+}
