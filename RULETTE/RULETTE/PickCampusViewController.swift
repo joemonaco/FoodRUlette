@@ -26,21 +26,25 @@ class PickCampusViewController: UIViewController {
         case "College Ave":
             api = "https://api.eatstreet.com/publicapi/v1/restaurant/search?method=both&street-address=58+Huntington+St.+New+Brunswick,+NJ,+08901"
             restModel.setApi(withURL: api)
+            restModel.setCampus(withName: "collegeAve.png")
             performSegue(withIdentifier: "campusPickSegue", sender: self)
             break
         case "Busch":
             api = "https://api.eatstreet.com/publicapi/v1/restaurant/search?method=both&street-address=604+Bartholomew+Rd,+Piscataway+Township,+NJ+08854"
             restModel.setApi(withURL: api)
+            restModel.setCampus(withName: "busch.png")
             performSegue(withIdentifier: "campusPickSegue", sender: self)
             break
         case "Livingston":
             api = "https://api.eatstreet.com/publicapi/v1/restaurant/search?method=both&street-address=84+Joyce+Kilmer+Ave+%23117D,+Piscataway+Township,+NJ+08854"
             restModel.setApi(withURL: api)
+            restModel.setCampus(withName: "livingston.png")
             performSegue(withIdentifier: "campusPickSegue", sender: self)
             break
         default:
             api = "https://api.eatstreet.com/publicapi/v1/restaurant/search?method=both&street-address=100+George+St,+New+Brunswick,+NJ+08901"
             restModel.setApi(withURL: api)
+            restModel.setCampus(withName: "cookdoug.png")
             performSegue(withIdentifier: "campusPickSegue", sender: self)
             break
         }

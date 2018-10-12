@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 //@testable import Alamofire
 //@testable import SwiftyJSON
 
@@ -24,6 +25,7 @@ struct restaurants: Decodable {
     var state: String
     var zip: String
     
+    
     func getAddress() -> String {
         return streetAddress + " " + city + ", " + state + ", " + zip
     }
@@ -36,6 +38,7 @@ class RestModel {
     var resturants: [restaurants]
     var api: String
     var restCount = 0
+    var campus: String
     
     var school: String
     
@@ -43,10 +46,15 @@ class RestModel {
         resturants = []
         api = ""
         school = ""
+        campus = ""
     }
     
     func setSchool(withSchool s: String) {
         school = s
+    }
+    
+    func setCampus(withName c: String) {
+        campus = c
     }
     
     func setApi(withURL url: String) {
@@ -56,6 +64,19 @@ class RestModel {
     
     func resetApi(){
             api = ""
+    }
+    
+    func getLogoImage(forRow r: Int) -> UIImage? {
+        
+        
+        let url = URL(string: resturants[r].logoUrl)
+        let data = try? Data(contentsOf: url!)
+        
+        if let imageData = data {
+            return UIImage(data: imageData)
+        }
+        return nil
+        
     }
     
     

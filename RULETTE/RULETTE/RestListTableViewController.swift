@@ -67,6 +67,7 @@ class RestListTableViewController: UITableViewController {
                 
                     
                     for item in jsondata.restaurants {
+                        
                         self.restModel.addToArray(addRestaurant: restaurants(name: item.name, logoUrl: item.logoUrl, url: item.url, streetAddress: item.streetAddress, city: item.city, state: item.state, zip: item.zip))
                     }
                     
@@ -88,9 +89,10 @@ class RestListTableViewController: UITableViewController {
     }
 
     
-   /* override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
-    }*/
+        randomIndex = false
+    }
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -112,14 +114,14 @@ class RestListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTVCell
         
         
-        let url = URL(string: rests[indexPath.row].logoUrl)
-        let data = try? Data(contentsOf: url!)
         
-        if let imageData = data {
-            let image = UIImage(data: imageData)
-            cell.setImage(withImage: image!)
+        
+        if let img = restModel.getLogoImage(forRow: indexPath.row) {
+            cell.setImage(withImage: img)
         }
         
+        cell.setBackground(atIndex: indexPath.row)
+    
         cell.setNameLabel(withName: rests[indexPath.row].name)
         
         // Configure the cell...

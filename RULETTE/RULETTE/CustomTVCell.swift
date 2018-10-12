@@ -16,9 +16,14 @@ class CustomTVCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     
+    let restModel = RestModel.restaurantModel
+    let effects = Effects.effectModel
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,6 +31,16 @@ class CustomTVCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    func setBackground(atIndex row: Int) {
+        
+        let bgImgView = effects.blur(forRow: row, withBounds: self.bounds)
+        self.backgroundView = bgImgView
+        self.backgroundColor = UIColor.clear
+    }
+    
+    
     
     func setImage(withImage img: UIImage) {
         logoImage.image = img

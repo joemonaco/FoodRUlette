@@ -19,23 +19,27 @@ class RestDetailViewController: UIViewController {
     @IBOutlet weak var linkButton: UIButton!
     
     let restModel = RestModel.restaurantModel
+    let effects = Effects.effectModel
+    
     var selectedRest: restaurants?
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+
         if let index = selectedRestIndex {
             selectedRest = restModel.resturants[index]
         }
+
+        //let bgImgView = effects.blur(forRow: selectedRestIndex!, withBounds: self.view.bounds)
+        //self.view.addSubview(bgImgView)
         
         let buttonImage = getButtonImage()!
-        
+
         linkButton.setImage(buttonImage, for: .normal)
         
         restNameLabel.text = selectedRest!.name
-        
-        
+
         
         let geocoder = CLGeocoder()
         let address = selectedRest!.getAddress()
@@ -58,15 +62,12 @@ class RestDetailViewController: UIViewController {
     }
     
     func getButtonImage() -> UIImage? {
-        let url = URL(string: selectedRest!.logoUrl)
-        let data = try? Data(contentsOf: url!)
         
-        if let imageData = data {
-            let image = UIImage(data: imageData)
-            return image!
+        if let index = selectedRestIndex {
+            return restModel.getLogoImage(forRow: index)
         }
-        
         return nil
+        
     }
     
     func centerMapOnLocation(location: CLLocation) {
