@@ -34,6 +34,8 @@ class CustomTVCell: UITableViewCell {
     }
     
     func setNameLabel(withName name: String) {
+        nameLabel.adjustsFontSizeToFitWidth = true
+        nameLabel.minimumScaleFactor = 0.1
         nameLabel.text = name
     }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18B01BA1D09059374F44F889 /* Pods_RULETTE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C768EEA70C09B32B3D4B35 /* Pods_RULETTE.framework */; };
+		D8629CDC216EC0A8004D5464 /* monmouth.png in Resources */ = {isa = PBXBuildFile; fileRef = D8629CDB216EC0A8004D5464 /* monmouth.png */; };
+		D8629CDE216EC180004D5464 /* UniversityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8629CDD216EC180004D5464 /* UniversityPickerViewController.swift */; };
 		D8A19E7621694FFE005C5329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A19E7521694FFE005C5329 /* AppDelegate.swift */; };
 		D8A19E7D21694FFE005C5329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A19E7C21694FFE005C5329 /* Assets.xcassets */; };
 		D8A19E8821695051005C5329 /* RestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A19E8721695051005C5329 /* RestListTableViewController.swift */; };
@@ -22,12 +24,15 @@
 		D8BFD64E216A3C1600D6C15B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD64D216A3C1600D6C15B /* Launch Screen.storyboard */; };
 		D8BFD650216A3C2B00D6C15B /* foodRUletteLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD64F216A3C2B00D6C15B /* foodRUletteLogo.png */; };
 		D8BFD654216E432600D6C15B /* rutgersLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD653216E432600D6C15B /* rutgersLogo.png */; };
+		D8BFD656216E65B900D6C15B /* rutgers.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFD655216E65B900D6C15B /* rutgers.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C4339E893EA754094DD1040 /* Pods-RULETTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RULETTE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RULETTE/Pods-RULETTE.debug.xcconfig"; sourceTree = "<group>"; };
 		640AA2C519368C61DBE6F764 /* Pods-RULETTE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RULETTE.release.xcconfig"; path = "Pods/Target Support Files/Pods-RULETTE/Pods-RULETTE.release.xcconfig"; sourceTree = "<group>"; };
 		79C768EEA70C09B32B3D4B35 /* Pods_RULETTE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RULETTE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8629CDB216EC0A8004D5464 /* monmouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monmouth.png; sourceTree = "<group>"; };
+		D8629CDD216EC180004D5464 /* UniversityPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityPickerViewController.swift; sourceTree = "<group>"; };
 		D8A19E7221694FFE005C5329 /* RULETTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RULETTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A19E7521694FFE005C5329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A19E7C21694FFE005C5329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		D8BFD64D216A3C1600D6C15B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D8BFD64F216A3C2B00D6C15B /* foodRUletteLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodRUletteLogo.png; sourceTree = "<group>"; };
 		D8BFD653216E432600D6C15B /* rutgersLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rutgersLogo.png; sourceTree = "<group>"; };
+		D8BFD655216E65B900D6C15B /* rutgers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rutgers.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,13 @@
 				640AA2C519368C61DBE6F764 /* Pods-RULETTE.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8629CDA216EBE58004D5464 /* Rutgers  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Rutgers ";
 			sourceTree = "<group>";
 		};
 		D8A19E6921694FFE005C5329 = {
@@ -91,7 +104,9 @@
 				D8A19E7521694FFE005C5329 /* AppDelegate.swift */,
 				D8BFD640216A1EDA00D6C15B /* CustomTVCell.swift */,
 				D8A19E8721695051005C5329 /* RestListTableViewController.swift */,
+				D8629CDA216EBE58004D5464 /* Rutgers  */,
 				D8BFD642216A23FC00D6C15B /* Main.storyboard */,
+				D8629CDD216EC180004D5464 /* UniversityPickerViewController.swift */,
 				D8BFD64D216A3C1600D6C15B /* Launch Screen.storyboard */,
 				D8BFD644216A274400D6C15B /* PickCampusViewController.swift */,
 				D8A19E8B21695B47005C5329 /* RestDetailViewController.swift */,
@@ -106,7 +121,9 @@
 		D8BFD64C216A39DE00D6C15B /* TextImages */ = {
 			isa = PBXGroup;
 			children = (
+				D8629CDB216EC0A8004D5464 /* monmouth.png */,
 				D8BFD653216E432600D6C15B /* rutgersLogo.png */,
+				D8BFD655216E65B900D6C15B /* rutgers.png */,
 				D8BFD64F216A3C2B00D6C15B /* foodRUletteLogo.png */,
 				D8BFD647216A39D400D6C15B /* foodRUletteRandom.png */,
 				D8BFD648216A39D400D6C15B /* foodRUletteRestaurants.png */,
@@ -187,10 +204,12 @@
 				D8BFD643216A23FC00D6C15B /* Main.storyboard in Resources */,
 				D8A19E7D21694FFE005C5329 /* Assets.xcassets in Resources */,
 				D8BFD650216A3C2B00D6C15B /* foodRUletteLogo.png in Resources */,
+				D8629CDC216EC0A8004D5464 /* monmouth.png in Resources */,
 				D8BFD64B216A39D400D6C15B /* foodRUletteRestaurants.png in Resources */,
 				D8BFD64A216A39D400D6C15B /* foodRUletteRandom.png in Resources */,
 				D8BFD64E216A3C1600D6C15B /* Launch Screen.storyboard in Resources */,
 				D8BFD654216E432600D6C15B /* rutgersLogo.png in Resources */,
+				D8BFD656216E65B900D6C15B /* rutgers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +271,7 @@
 			files = (
 				D8BFD641216A1EDA00D6C15B /* CustomTVCell.swift in Sources */,
 				D8A19E8821695051005C5329 /* RestListTableViewController.swift in Sources */,
+				D8629CDE216EC180004D5464 /* UniversityPickerViewController.swift in Sources */,
 				D8BFD645216A274400D6C15B /* PickCampusViewController.swift in Sources */,
 				D8A19E8C21695B47005C5329 /* RestDetailViewController.swift in Sources */,
 				D8A19E7621694FFE005C5329 /* AppDelegate.swift in Sources */,

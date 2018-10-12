@@ -36,9 +36,17 @@ class RestModel {
     var resturants: [restaurants]
     var api: String
     var restCount = 0
+    
+    var school: String
+    
     init() {
         resturants = []
         api = ""
+        school = ""
+    }
+    
+    func setSchool(withSchool s: String) {
+        school = s
     }
     
     func setApi(withURL url: String) {
@@ -53,8 +61,6 @@ class RestModel {
     
     
     func addToArray(addRestaurant rest: restaurants) {
-        //print(rest.name + " " + String(rest.lat) + " " + String(rest.long))
-        print(rest)
         resturants.append(rest)
     }
     

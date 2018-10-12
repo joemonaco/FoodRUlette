@@ -12,29 +12,45 @@ import UIKit
 
 class RestListTableViewController: UITableViewController {
 
+    var timeTimer: Timer?
     
     let restModel = RestModel.restaurantModel
     var rests: [restaurants] = []
     var randomIndex = false
     var apiUrl: String?
     
-    @IBOutlet weak var rutgersLogoImage: UIImageView!
-    @IBOutlet weak var activityView: UIActivityIndicatorView!
+    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var activityView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //activityView.backgroundColor = UIColor.blue
+        logoImage.center = self.tableView.center
+        
+        timeTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.animateLogo), userInfo: nil, repeats: true)
+        animateLogo()
+        
         
         activityView.isHidden = false
+        activityView.addSubview(logoImage)
         tableView.backgroundView = activityView
-        activityView.center = self.view.center
-        activityView.startAnimating()
+        activityView.center = self.tableView.center
         self.view.addSubview(activityView)
  
         addRests()
     }
 
+    
+    
+    @objc func animateLogo() {
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveLinear, animations: { () -> Void in
+        self.logoImage.transform = self.logoImage.transform.rotated(by: CGFloat(Double.pi))
+        })
+    }
+    
     func addRests() {
         
         let apiURLstring = restModel.api
@@ -44,34 +60,31 @@ class RestListTableViewController: UITableViewController {
         request.setValue("bf15826772d3e84e", forHTTPHeaderField: "X-Access-Token")
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-           DispatchQueue.main.async {
                 guard let data = data else {return}
                 
                 do {
                     let jsondata = try JSONDecoder().decode(Initial.self, from: data)
-                   
+                
+                    
                     for item in jsondata.restaurants {
-                        self.rests.append(restaurants(name: item.name, logoUrl: item.logoUrl, url: item.url, streetAddress: item.streetAddress, city: item.city, state: item.state, zip: item.zip))
+                        self.restModel.addToArray(addRestaurant: restaurants(name: item.name, logoUrl: item.logoUrl, url: item.url, streetAddress: item.streetAddress, city: item.city, state: item.state, zip: item.zip))
                     }
                     
-                    self.activityView.stopAnimating()
-                    self.activityView.isHidden = true
+                    self.rests = self.restModel.resturants
                     
-                    self.tableView.reloadData()
-                    self.tableView.isHidden = false
- 
-                    
-                    
-                    //this loop is to update the model
-                    for r in self.rests {
-                        self.restModel.addToArray(addRestaurant: r)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                        self.activityView.isHidden = true
+                        self.timeTimer?.invalidate()
+                        self.logoImage.layer.removeAllAnimations()
+                        self.tableView.isHidden = false
                     }
+                    
                     
                 } catch let jsonErr {
                     print("error", jsonErr)
                 }
-            }
-        }.resume()
+            }.resume()
     }
 
     
@@ -80,6 +93,10 @@ class RestListTableViewController: UITableViewController {
     }*/
     // MARK: - Table view data source
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -93,6 +110,7 @@ class RestListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTVCell
+        
         
         let url = URL(string: rests[indexPath.row].logoUrl)
         let data = try? Data(contentsOf: url!)
